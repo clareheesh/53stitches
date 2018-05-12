@@ -1,0 +1,66 @@
+/**** Colours *****/
+$pink: #FFD8DB;
+$pink-hover: #F2B8BD;
+$green: #88C4CD;
+$green-hover: #4F9DA8;
+
+$black: #1C1A1A;
+$dark-grey: #606060;
+$grey: #C4C4C4;
+$light-grey: #E5E5E5;
+$lightest-grey: #F7F7F7;
+$white: #FFFFFF;
+
+$brand-primary: $green;
+$brand-secondary: $dark-grey;
+
+$border-color: $grey;
+
+/** Element specific colours **/
+$header-bg: $white;
+$header-color: $dark-grey;
+$header-link: $dark-grey;
+$header-link-hover: $green;
+
+$body-bg: $lightest-grey;
+$body-color: $dark-grey;
+$body-link: $green;
+$body-link-hover: $green-hover;
+
+$footer-bg: $white;
+$footer-color: $dark-grey;
+$footer-link: $green;
+$footer-link-hover: $green;
+
+/***** Fonts *****/
+$headings-font-family: 'Montserrat', 'Heebo', sans-serif;
+$body-font-family: 'Pt Serif', 'Georgia', serif;
+
+$mobile-menu-breakpoint-min: 768px;
+$mobile-menu-breakpoint-max: $mobile-menu-breakpoint-min - 1px;
+
+// $font-size-h1
+// $hr-border-color
+// Font Awesome
+$fa-font-path: "./assets/dist/fonts" !default;
+
+$btn-padding-x: 25px;
+$btn-padding-y: 10px;
+
+$container-width: 1000px;
+$container-width--narrow: 840px;
+$container-md: $container-width;
+$container-lg: $container-width;
+
+// Slick
+$slick-font-path: "./assets/dist/fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./assets/img/" !default;
+
+/** Heading **/
+$heading-height: 80px;
+$header-height: $heading-height;
+
+/*** Layout ***/
+$mobile-breakpoint: 991px;
+$section-margin: 120px;

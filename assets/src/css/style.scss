@@ -1,0 +1,32 @@
+/*!
+Theme Name: 53stitches
+Theme URI: http://53stitches.com
+Description: 53stitches is a crochet and hobby blog.
+
+Author: Clare Heesh
+Author URI: http://53stitches.com
+Version: 1.0
+*/
+
+@import "clean";
+@import "variables";
+@import "mixins";
+
+// Bootstrap
+@import "bootstrap/bootstrap";
+
+// FontAwesome
+@import "fontawesome/font-awesome";
+
+// Slick
+@import "slick/slick";
+@import "slick/slick-theme";
+
+/** Modules **/
+@import "modules/hero";
+@import "modules/featured-post";
+@import "modules/featured-text";
+@import "modules/patterns";
+
+/** Importing main ***/
+@import "main";

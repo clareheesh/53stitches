@@ -1,0 +1,103 @@
+/*** Featured Post ***/
+.featured-post {
+  &__image {
+    position: relative;
+  }
+
+  &__content {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    position: relative;
+    height: 100%;
+    padding: 30px 0;
+
+    @media (max-width: $mobile-breakpoint) {
+      border-top: 0;
+    }
+
+    h2, h2 a {
+      font-weight: 100;
+      font-size: 4.2rem;
+      margin-bottom: 15px;
+      color: $dark-grey;
+      line-height: initial;
+    }
+
+    .read-more {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-family: $headings-font-family;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__difficulty {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+
+    color: $green;
+    font-style: italic;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    span {
+      display: inline-block;
+      line-height: 19px;
+      margin-right: 10px;
+    }
+  }
+
+  .single-post {
+    position: relative;
+    margin: 60px 0 45px;
+
+    &__image {
+      padding-bottom: 40%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 15px;
+      position: relative;
+
+      @media (max-width: $mobile-breakpoint) {
+        padding-bottom: 70%;
+      }
+
+      a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    h2 {
+      margin-bottom: 15px;
+
+      a {
+        color: $black;
+        font-size: 2rem;
+        letter-spacing: 2px;
+
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: $green;
+      font-size: 1.2rem;
+    }
+  }
+}

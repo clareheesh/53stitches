@@ -1,0 +1,101 @@
+/*** Patterns ***/
+.patterns {
+  &__container {
+    overflow: auto;
+  }
+
+  &__single {
+    position: relative;
+    float: left;
+
+    background: center no-repeat;
+    background-size: cover;
+
+    width: 50%;
+    padding-bottom: 50vw;
+
+    .archive__posts & {
+      border: 1px solid white;
+    }
+
+    &--large {
+      width: 100%;
+    }
+
+    &--free-width {
+      width: 50% !important;
+      padding-bottom: 40% !important;
+      height: 0 !important;
+    }
+
+    @media (min-width: $mobile-menu-breakpoint-min) {
+      &--free-width {
+        width: 25% !important;
+        padding-bottom: 25% !important;
+      }
+    }
+
+    @media (min-width: $mobile-breakpoint) {
+      width: 250px;
+      height: 250px;
+      padding-bottom: 0;
+
+      &--large {
+        width: calc(100% - 500px);
+        height: 500px;
+      }
+    }
+
+    @media (min-width: 1500px) {
+      width: 400px;
+      height: 400px;
+
+      &--large {
+        width: calc(100% - 800px);
+        height: 800px;
+      }
+    }
+
+    a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      &:hover {
+        background: rgba($black, 0.3);
+      }
+    }
+  }
+
+  &__details {
+    position: absolute;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+
+    .patterns__single--dark & {
+      color: $black;
+    }
+
+    h3, p {
+      margin-bottom: 0;
+    }
+
+    p {
+      font-style: italic;
+      font-size: 1.4rem;
+      letter-spacing: 1.4px;
+    }
+
+    .difficulty {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+}
