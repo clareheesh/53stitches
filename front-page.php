@@ -1,22 +1,22 @@
 <?php /* if (is_user_logged_in()) : */ ?>
 
-    <?php get_header(); ?>
+<?php get_header(); ?>
 
-    <?php if (have_rows('modules')) : ?>
+<?php if (have_rows( 'modules' )) : ?>
+	
+	<?php while (have_rows( 'modules' )) : the_row(); ?>
+		
+		<?php
+		// Get the row layout and call the corresponding template file
+		$layout = get_row_layout();
+		get_template_part( 'modules/module', $layout )
+		?>
+	
+	<?php endwhile; ?>
 
-        <?php while (have_rows('modules')) : the_row(); ?>
+<?php endif; ?>
 
-            <?php
-            // Get the row layout and call the corresponding template file
-            $layout = get_row_layout();
-            get_template_part('modules/module', $layout)
-            ?>
-
-        <?php endwhile; ?>
-
-    <?php endif; ?>
-
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
 
 <?php /* else : */ ?>
 

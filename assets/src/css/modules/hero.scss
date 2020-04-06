@@ -10,6 +10,24 @@
     margin-bottom: calc(#{$section-margin} / 2);
   }
 
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .btn {
+      margin: 7px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      .btn {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
   &--background-image {
     height: calc(100vh - #{$heading-height});
     min-height: 650px;
